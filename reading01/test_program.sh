@@ -7,7 +7,7 @@ c2UKRmFsc2UK
 EOF
 }
 
-echo "Checking reading01 program ... "
+echo "Testing reading01 program ... "
 
 DIFF=$(diff <(./program 2> /dev/null) <(output) | grep -E "^[><]" | wc -l)
 COUNT=$(output | wc -l)
